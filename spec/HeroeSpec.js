@@ -1,10 +1,13 @@
 // La función `it` se utiliza para escribir un Caso de Prueba concreto o Test Case
 // it(cadena que describe el Test Case, callback)
 it('New hero should have undefined strength', () => {
-    const heroe = new Heroe();
+    // arrange
+    var heroe;
 
-    heroe;
+    // act
+    heroe = new Heroe();
 
+    // assert
     expect(heroe.strenght).toBeUndefined();
 })
 
@@ -49,7 +52,7 @@ describe(`${Heroe.name}`, function() {
         const heroe = new Heroe('Arya Stark');
 
         // act
-        heroe.changeStrenght(10);
+        heroe.strenght = 10;
 
         // assert
         expect(heroe.strenght).toEqual(10);  
