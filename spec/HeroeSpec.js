@@ -11,9 +11,10 @@ it('New hero should have undefined strength', () => {
     expect(heroe.strenght).toBeUndefined();
 })
 
+
 // Colección de casos de prueba o Test Suite
 // describe(cadena que describe el 'Test Suite', callback)
-describe(`${Heroe.name}`, function() {
+describe(`${Heroe.name}`, () => {
 
     // La colección de pruebas debe escribirse como una historia
     // que describe los casos de uso que se están probando
@@ -34,6 +35,7 @@ describe(`${Heroe.name}`, function() {
         // toEqual(), toBeTruthy(), toBeUndefined() entre otros muchos y además los que podemos
         // crear nosotros mismos. 
         expect(heroe).not.toBeNull();
+        // expect(heroe).toBeTruthy();
     });
     
     it('should have a name', function() {

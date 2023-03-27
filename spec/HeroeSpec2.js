@@ -18,6 +18,7 @@ describe(`${Heroe.name}`, function() {
 
     // Se invoca después de cada test case
     afterEach(() => {
+        console.log('After each');
         heroe = null;
     });
 
@@ -29,7 +30,7 @@ describe(`${Heroe.name}`, function() {
         console.log('End testing');
     });
 
-    xit('should true be true', () =>{
+    it('should true be true', () =>{
         expect(true).toBe(true);
     });
 
